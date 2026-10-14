@@ -8,6 +8,13 @@
       "when": 1791985443720,
       "tag": "0000_parinayam_wedding_studio_core",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1791985546276,
+      "tag": "0001_seed_hero_media",
+      "breakpoints": true
     }
   ]
 }
