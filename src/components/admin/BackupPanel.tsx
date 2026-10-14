@@ -41,7 +41,7 @@ export function BackupPanel() {
       const blob = new Blob([JSON.stringify(backup, null, 2)], { type: "application/json" });
       const name = `parinayam-backup-${new Date().toISOString().slice(0, 10)}.json`;
       setReady({ blob, name });
-      const counts = TABLES.map((t) => data[t].length).reduce((a, b) => a + b, 0);
+      const counts = TABLES.map((t) => data[t]?.length ?? 0).reduce((a, b) => a + b, 0);
       toast.success(`Backup ready (${counts} records)`);
     } catch (e) {
       toast.error(e instanceof Error ? e.message : "Backup failed");
