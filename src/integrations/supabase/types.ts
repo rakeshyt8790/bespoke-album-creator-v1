@@ -14,7 +14,171 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      event_types: {
+        Row: {
+          created_at: string
+          display_order: number
+          id: string
+          is_active: boolean
+          name: string
+        }
+        Insert: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_active?: boolean
+          name: string
+        }
+        Update: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_active?: boolean
+          name?: string
+        }
+        Relationships: []
+      }
+      portfolio_media: {
+        Row: {
+          category: string
+          created_at: string
+          display_order: number
+          id: string
+          is_hero: boolean
+          media_type: string
+          media_url: string
+          title: string
+        }
+        Insert: {
+          category?: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_hero?: boolean
+          media_type?: string
+          media_url: string
+          title?: string
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_hero?: boolean
+          media_type?: string
+          media_url?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      quote_inquiries: {
+        Row: {
+          client_name: string
+          created_at: string
+          email: string | null
+          event_details: Json
+          id: string
+          notes: string | null
+          phone: string
+          status: string
+          total_amount: number
+        }
+        Insert: {
+          client_name: string
+          created_at?: string
+          email?: string | null
+          event_details?: Json
+          id?: string
+          notes?: string | null
+          phone: string
+          status?: string
+          total_amount?: number
+        }
+        Update: {
+          client_name?: string
+          created_at?: string
+          email?: string | null
+          event_details?: Json
+          id?: string
+          notes?: string | null
+          phone?: string
+          status?: string
+          total_amount?: number
+        }
+        Relationships: []
+      }
+      services_cameras: {
+        Row: {
+          category: string
+          created_at: string
+          display_order: number
+          id: string
+          is_active: boolean
+          name: string
+          unit_price: number
+        }
+        Insert: {
+          category?: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_active?: boolean
+          name: string
+          unit_price?: number
+        }
+        Update: {
+          category?: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_active?: boolean
+          name?: string
+          unit_price?: number
+        }
+        Relationships: []
+      }
+      site_settings: {
+        Row: {
+          bio: string | null
+          id: string
+          instagram_url: string | null
+          logo_url: string | null
+          phone_number: string | null
+          studio_address: string | null
+          studio_name: string
+          tagline: string
+          updated_at: string
+          whatsapp_number: string | null
+          youtube_url: string | null
+        }
+        Insert: {
+          bio?: string | null
+          id?: string
+          instagram_url?: string | null
+          logo_url?: string | null
+          phone_number?: string | null
+          studio_address?: string | null
+          studio_name?: string
+          tagline?: string
+          updated_at?: string
+          whatsapp_number?: string | null
+          youtube_url?: string | null
+        }
+        Update: {
+          bio?: string | null
+          id?: string
+          instagram_url?: string | null
+          logo_url?: string | null
+          phone_number?: string | null
+          studio_address?: string | null
+          studio_name?: string
+          tagline?: string
+          updated_at?: string
+          whatsapp_number?: string | null
+          youtube_url?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
