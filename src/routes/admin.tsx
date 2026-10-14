@@ -3,6 +3,7 @@ import type { Session } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
+import { BackupPanel } from "@/components/admin/BackupPanel";
 import { BrandingPanel } from "@/components/admin/BrandingPanel";
 import { EventsPanel } from "@/components/admin/EventsPanel";
 import { InquiriesPanel } from "@/components/admin/InquiriesPanel";
@@ -198,6 +199,7 @@ function Dashboard() {
           </TabsContent>
           <TabsContent value="security">
             <SecurityPanel />
+            <BackupPanel />
           </TabsContent>
         </Tabs>
       </div>
