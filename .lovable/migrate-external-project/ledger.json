@@ -1,0 +1,12 @@
+{
+  "source": "github",
+  "repo": "https://github.com/rakeshyt8790/bespoke-album-creator.git",
+  "capabilities": [
+    {"capability": "application code (TanStack Start site + admin)", "source": "src/", "outcome": "migrate", "status": "in_progress", "next_action": "copy source into project"},
+    {"capability": "database schema (5 tables + storage policies)", "source": "db-export/schema.sql", "outcome": "migrate", "status": "pending", "next_action": "apply via Lovable Cloud migration"},
+    {"capability": "database records", "source": "db-export/data (empty)", "outcome": "pending", "status": "blocked", "next_action": "request data export from user after preview"},
+    {"capability": "auth (admin login via Lovable Cloud)", "source": "src/integrations/supabase", "outcome": "migrate", "status": "pending", "next_action": "enable Lovable Cloud"},
+    {"capability": "portfolio file storage (bucket 'portfolio')", "source": "schema.sql storage policies", "outcome": "migrate", "status": "pending", "next_action": "create bucket in migration; file bytes not in repo"},
+    {"capability": "static assets (favicon, og-image)", "source": "public/", "outcome": "migrate", "status": "pending", "next_action": "copy into public/"}
+  ]
+}
