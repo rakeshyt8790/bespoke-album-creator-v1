@@ -1,0 +1,13 @@
+{
+  "source": "github",
+  "repo": "https://github.com/rakeshyt8790/bespoke-album-creator.git",
+  "capabilities": [
+    {"capability": "application code (TanStack Start site + admin)", "source": "src/", "outcome": "migrate", "status": "verified", "next_action": "none — all 4 routes render, no console errors"},
+    {"capability": "database schema (5 tables + storage policies)", "source": "db-export/schema.sql", "outcome": "migrate", "status": "verified", "next_action": "none — applied as migration 0000"},
+    {"capability": "database records (portfolio, services, inquiries, settings)", "source": "db-export/data (empty in repo)", "outcome": "pending", "status": "blocked", "next_action": "user exports rows from old project (Cloud → Advanced settings → Export data) and attaches them"},
+    {"capability": "auth (admin login, username@parinayam.local)", "source": "src/routes/admin.tsx", "outcome": "migrate", "status": "pending", "next_action": "user creates admin account in Cloud → Users → Add user with email <username>@parinayam.local"},
+    {"capability": "portfolio file storage (bucket 'portfolio')", "source": "schema.sql storage policies", "outcome": "migrate", "status": "verified", "next_action": "bucket created + policies applied; old photo files were not in the repo and must be re-uploaded via admin panel"},
+    {"capability": "static assets (favicon, og-image)", "source": "public/", "outcome": "migrate", "status": "verified", "next_action": "none"},
+    {"capability": "starter hero image", "source": "generated", "outcome": "migrate", "status": "verified", "next_action": "replace with real photo via admin panel"}
+  ]
+}
