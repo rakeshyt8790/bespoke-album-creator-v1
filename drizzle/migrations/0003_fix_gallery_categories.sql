@@ -1,0 +1,2 @@
+UPDATE public.portfolio_media SET category='Weddings' WHERE media_url IN ('gallery/bride-portrait.jpg','gallery/haldi.jpg');
+UPDATE public.portfolio_media SET category='Pre-Weddings' WHERE media_url='gallery/pre-wedding.jpg';

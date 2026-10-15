@@ -22,6 +22,13 @@
       "when": 1792042247321,
       "tag": "0002_seed_gallery_photos",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1792042339347,
+      "tag": "0003_fix_gallery_categories",
+      "breakpoints": true
     }
   ]
 }
