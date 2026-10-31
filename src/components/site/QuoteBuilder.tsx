@@ -280,8 +280,7 @@ export function QuoteBuilder() {
       <Button
         type="button"
         onClick={addEvent}
-        variant="outline"
-        className="mt-6 w-full rounded-none border-dashed border-border bg-transparent py-6 text-[11px] tracking-[0.22em] hover:border-primary hover:bg-transparent hover:text-primary"
+        className="mt-6 w-full rounded-none bg-primary py-6 text-[11px] font-semibold tracking-[0.22em] text-primary-foreground shadow-lift hover:bg-primary/90"
       >
         <Plus className="mr-2 size-4" /> ADD EVENT
       </Button>
