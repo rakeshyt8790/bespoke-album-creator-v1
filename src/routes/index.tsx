@@ -101,7 +101,7 @@ function Home() {
             the cameras and crew you want. See your total update live.
           </p>
           <Button asChild size="lg" className="mt-10 rounded-none px-8 text-[11px] tracking-[0.22em]">
-            <Link to="/quote">BUILD YOUR INVESTMENT &amp; RESERVE DATE</Link>
+            <Link to="/quote">BUILD YOUR QUOTE &amp; RESERVE DATE</Link>
           </Button>
         </div>
       </section>
